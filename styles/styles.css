@@ -27,7 +27,7 @@ body {
 /* PAGE WIDTH */
 
 header, .grid, footer {
-  max-width: 840px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
