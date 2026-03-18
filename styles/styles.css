@@ -100,7 +100,6 @@ p {
 
 aside {
   grid-row: 1;
-  width: 300px;
 }
 
 aside img {
@@ -111,7 +110,7 @@ aside img {
 /* BOX CLASS */
 
 .box {
-  margin: 20px auto;
+  margin: 20px;
   border: 2px solid var(--blue);
   padding: 20px;
   background-color: var(--light-blue);
