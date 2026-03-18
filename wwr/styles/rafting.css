@@ -17,8 +17,8 @@
 
 /* BODY */
 body {
-    font-family: var(--body-font);
-    color: var(--primary-color);
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
 
 /* PAGE WIDTH */
