@@ -55,7 +55,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* GRID LAYOUT */
+/* GRID */
 
 .grid {
   display: grid;
@@ -107,7 +107,7 @@ aside img {
   height: auto;
 }
 
-/* BOX CLASS */
+/* BOX */
 
 .box {
   margin: 20px;
