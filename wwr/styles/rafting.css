@@ -54,7 +54,6 @@ nav a {
     padding: 10px;
 }
 
-/* HERO SECTION */
 .hero {
     position: relative;
 }
@@ -87,7 +86,7 @@ nav a {
     width: 75%;
 }
 
-/* IMAGE INSIDE ARTICLE */
+
 .hero article img {
     float: right;
     width: 125px;
