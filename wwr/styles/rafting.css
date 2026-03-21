@@ -109,7 +109,7 @@ h2 {
 
 /* FOOTER */
 footer {
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 15px;
 }
