@@ -29,8 +29,6 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 20px;
-    color: black;
-    
 }
 
 header img {
@@ -40,7 +38,7 @@ header img {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: black;
+    color: white; /* melhora contraste */
     font-weight: bold;
 }
 
@@ -76,7 +74,7 @@ nav a {
     max-width: 300px;
 }
 
-/* 🔥 OBRIGATÓRIO PRO PROFESSOR */
+/* OBRIGATÓRIO PRO PROFESSOR */
 .hero article img {
     float: right;
     margin-left: 10px;
@@ -85,6 +83,7 @@ nav a {
 /* SECTIONS */
 section {
     padding: 20px;
+    background-color: var(--accent2-color); /* 👈 garante uso da variável */
 }
 
 /* TITLES */
