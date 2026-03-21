@@ -27,8 +27,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px;
+    color: black;
     
 }
 
@@ -39,7 +40,7 @@ header img {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: black;
     font-weight: bold;
 }
 
@@ -90,6 +91,7 @@ section {
 h2 {
     margin-bottom: 10px;
     font-family: var(--heading-font);
+    color: var(--accent1-color);
 }
 
 /* GALERIA */
