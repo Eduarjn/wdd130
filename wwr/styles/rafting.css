@@ -1,14 +1,10 @@
-/* BOTÃO */
-.btn {
-    background-color: #ffb703;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+/* melhora geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
-/* HERO */
+/* hero */
 .hero {
     position: relative;
     text-align: center;
@@ -16,54 +12,37 @@
 
 .hero img {
     width: 100%;
-    height: auto;
 }
 
 .hero h1 {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20px;
+    left: 20px;
     color: white;
 }
 
 .hero article {
     position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 20px;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255,255,255,0.85);
+    padding: 10px;
+    max-width: 300px;
 }
 
-/* CARDS */
-.cards {
+/* galeria */
+.gallery {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.card {
-    width: 250px;
-    text-align: center;
+.gallery img {
+    width: 150px;
+    border-radius: 5px;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* CTA FINAL */
-.cta {
-    text-align: center;
-    padding: 40px;
-    background-color: #1b4965;
-    color: white;
-}
-
-/* ESPAÇAMENTO */
+/* espaçamento */
 section {
-    padding: 40px 20px;
+    padding: 20px;
 }
