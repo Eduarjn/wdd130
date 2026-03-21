@@ -1,116 +1,69 @@
-:root {
-    --primary-color: #1b4965;
-    --secondary-color: #62b6cb;
-    --accent1-color: #5fa8d3;
-    --accent2-color: #bee9e8;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-}
-
-/* PAGE WIDTH */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* HEADINGS */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* GENERAL SPACING */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* HEADER LAYOUT */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* NAVIGATION */
-nav a {
+/* BOTÃO */
+.btn {
+    background-color: #ffb703;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    color: var(--primary-color);
     font-weight: bold;
-    padding: 10px;
 }
 
+/* HERO */
 .hero {
     position: relative;
+    text-align: center;
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
 
-/* HERO TITLE */
 .hero h1 {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--primary-color);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
-/* HERO ARTICLE OVERLAY */
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--accent2-color);
-    padding: 16px;
-    width: 75%;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px;
 }
 
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 15px;
-    border: 2px solid white;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* SOCIAL MEDIA */
-.socialmedia {
+/* CARDS */
+.cards {
     display: flex;
+    gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.socialmedia a {
-    text-decoration: none;
+.card {
+    width: 250px;
+    text-align: center;
 }
 
-.socialmedia img {
-    width: 35px;
-    margin: 5px;
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CTA FINAL */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background-color: #1b4965;
+    color: white;
+}
+
+/* ESPAÇAMENTO */
+section {
+    padding: 40px 20px;
 }
