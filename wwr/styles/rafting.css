@@ -1,10 +1,48 @@
-/* melhora geral */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+/* RESET GLOBAL (OBRIGATÓRIO) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* hero */
+/* VARIÁVEIS (OBRIGATÓRIO) */
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent1-color: #5fa8d3;
+    --accent2-color: #bee9e8;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 10px 20px;
+}
+
+header img {
+    display: block;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* HERO */
 .hero {
     position: relative;
     text-align: center;
@@ -12,29 +50,53 @@ body {
 
 .hero img {
     width: 100%;
+    display: block;
 }
 
+/* TÍTULO */
 .hero h1 {
     position: absolute;
     top: 20px;
     left: 20px;
     color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    font-family: var(--heading-font);
 }
 
+/* ARTICLE */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.9);
     padding: 10px;
     max-width: 300px;
 }
 
-/* galeria */
+/* 🔥 OBRIGATÓRIO PRO PROFESSOR */
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* SECTIONS */
+section {
+    padding: 20px;
+}
+
+/* TITLES */
+h2 {
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+}
+
+/* GALERIA */
 .gallery {
     display: flex;
     gap: 15px;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .gallery img {
@@ -42,7 +104,23 @@ body {
     border-radius: 5px;
 }
 
-/* espaçamento */
-section {
-    padding: 20px;
+/* FOOTER */
+footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia a {
+    text-decoration: none; /* obrigatório */
+    margin: 0 5px;
+}
+
+.socialmedia img {
+    width: 30px;
 }
