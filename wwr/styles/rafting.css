@@ -22,10 +22,10 @@ body {
     color: var(--primary-color);
 }
 
-/* HEADER */
+/* HEADER (GRID) */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background-color: var(--primary-color);
     padding: 20px;
@@ -35,10 +35,16 @@ header img {
     display: block;
 }
 
+/* NAV (FLEX) */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
 nav a {
-    margin: 0 10px;
     text-decoration: none;
-    color: white; /* melhora contraste */
+    color: white;
     font-weight: bold;
 }
 
@@ -83,44 +89,68 @@ nav a {
 /* SECTIONS */
 section {
     padding: 20px;
-    background-color: var(--accent2-color); /* 👈 garante uso da variável */
+    background-color: var(--accent2-color);
+    margin-bottom: 10px; /* ajuda no layout do wireframe */
 }
 
 /* TITLES */
 h2 {
     margin-bottom: 10px;
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
-/* GALERIA */
+/* HISTORY (melhora alinhamento tipo wireframe) */
+section p {
+    max-width: 800px;
+}
+
+/* GALERIA (5 IMAGENS) */
 .gallery {
     display: flex;
-    gap: 15px;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
     margin-top: 15px;
 }
 
+.gallery figure {
+    text-align: center;
+    flex: 1;
+}
+
 .gallery img {
-    width: 150px;
+    width: 100%;
+    max-width: 120px;
     border-radius: 5px;
+}
+
+.gallery figcaption {
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 /* FOOTER */
 footer {
     background-color: var(--secondary-color);
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
+    color: black;
 }
 
 footer p {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 /* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
 .socialmedia a {
-    text-decoration: none; /* obrigatório */
-    margin: 0 5px;
+    text-decoration: none;
 }
 
 .socialmedia img {
