@@ -1,11 +1,11 @@
-/* RESET GLOBAL (OBRIGATÓRIO) */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* VARIÁVEIS (OBRIGATÓRIO) */
+/* VARIÁVEIS */
 :root {
     --primary-color: #1b4965;
     --secondary-color: #62b6cb;
@@ -18,21 +18,16 @@
 /* BODY */
 body {
     font-family: var(--body-font);
-    line-height: 1.6;
     color: var(--primary-color);
 }
 
 /* HEADER (GRID) */
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 20px;
-}
-
-header img {
-    display: block;
+    padding: 15px 30px;
 }
 
 /* NAV (FLEX) */
@@ -43,90 +38,77 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
 /* HERO */
 .hero {
     position: relative;
-    text-align: center;
 }
 
 .hero img {
     width: 100%;
-    display: block;
 }
 
-/* TÍTULO */
 .hero h1 {
     position: absolute;
     top: 20px;
     left: 20px;
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
     padding: 5px 10px;
-    font-family: var(--heading-font);
 }
 
-/* ARTICLE */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255,255,255,0.9);
+    background: white;
     padding: 10px;
     max-width: 300px;
 }
 
-/* OBRIGATÓRIO PRO PROFESSOR */
 .hero article img {
     float: right;
     margin-left: 10px;
 }
 
-/* SECTIONS */
-section {
-    padding: 20px;
+/* HISTORY (IGUAL AO WIREFRAME) */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
     background-color: var(--accent2-color);
-    margin-bottom: 10px; /* ajuda no layout do wireframe */
 }
 
-/* TITLES */
-h2 {
-    margin-bottom: 10px;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+.history img {
+    width: 100%;
 }
 
-/* HISTORY (melhora alinhamento tipo wireframe) */
-section p {
-    max-width: 800px;
-}
-
-/* GALERIA (5 IMAGENS) */
+/* ADVENTURE (5 ITENS) */
 .gallery {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    margin-top: 15px;
+    padding: 30px;
+    background-color: #f2f2f2;
 }
 
 .gallery figure {
     text-align: center;
-    flex: 1;
+    width: 18%;
 }
 
 .gallery img {
     width: 100%;
-    max-width: 120px;
-    border-radius: 5px;
 }
 
 .gallery figcaption {
-    font-size: 0.8rem;
     margin-top: 5px;
+    font-size: 0.8rem;
 }
 
 /* FOOTER */
@@ -135,22 +117,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    color: black;
+    padding: 15px 30px;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* SOCIAL MEDIA */
 .socialmedia {
     display: flex;
     gap: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .socialmedia img {
