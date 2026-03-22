@@ -15,37 +15,49 @@
     --body-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* BODY */
+/* BODY CENTRALIZADO */
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
+    background-color: #f5f5f5;
 }
 
-/* HEADER (GRID) */
+/* CONTAINER PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: var(--primary-color);
-    padding: 15px 30px;
+    background-color: #c8b6e2; /* igual wireframe */
+    padding: 20px;
 }
 
-/* NAV (FLEX) */
 nav {
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav a {
-    color: white;
+    background-color: white;
+    padding: 8px 15px;
+    border: 1px solid #999;
     text-decoration: none;
-    font-weight: bold;
+    color: black;
 }
 
 /* HERO */
 .hero {
-    position: relative;
+    border: 1px solid #999;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
 }
 
 .hero img {
@@ -53,21 +65,14 @@ nav a {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-    background: rgba(0,0,0,0.5);
-    padding: 5px 10px;
+    margin: 10px 0;
 }
 
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: white;
-    padding: 10px;
-    max-width: 300px;
+    border: 1px solid #999;
+    padding: 15px;
+    margin-top: 10px;
+    position: relative;
 }
 
 .hero article img {
@@ -75,56 +80,56 @@ nav a {
     margin-left: 10px;
 }
 
-/* HISTORY (IGUAL AO WIREFRAME) */
+/* HISTORY */
 .history {
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #eee;
+
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
     gap: 20px;
-    padding: 30px;
-    background-color: var(--accent2-color);
+    align-items: center;
 }
 
 .history img {
     width: 100%;
 }
 
-/* ADVENTURE (5 ITENS) */
+/* ADVENTURE */
+.adventure {
+    border: 1px solid #999;
+    padding: 20px;
+    background-color: #eee;
+}
+
 .gallery {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    background-color: #f2f2f2;
+    margin-top: 20px;
 }
 
 .gallery figure {
     text-align: center;
-    width: 18%;
 }
 
 .gallery img {
-    width: 100%;
-}
-
-.gallery figcaption {
-    margin-top: 5px;
-    font-size: 0.8rem;
+    width: 100px;
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--secondary-color);
+    background-color: #c8b6e2;
+    padding: 15px;
+    margin-top: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
 }
 
 .socialmedia {
     display: flex;
     gap: 10px;
-}
-
-.socialmedia img {
-    width: 30px;
 }
