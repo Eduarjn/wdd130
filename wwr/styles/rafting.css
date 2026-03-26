@@ -1,135 +1,95 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* VARIÁVEIS */
-:root {
-    --primary-color: #1b4965;
-    --secondary-color: #62b6cb;
-    --accent1-color: #5fa8d3;
-    --accent2-color: #bee9e8;
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* BODY CENTRALIZADO */
 body {
-    font-family: var(--body-font);
-    background-color: #f5f5f5;
-}
-
-/* CONTAINER PRINCIPAL */
-main {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 /* HEADER */
-header {
+.header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: #c8b6e2; /* igual wireframe */
-    padding: 20px;
+    background-color: #b6a7d8;
+    padding: 10px;
 }
 
-nav {
+.logo {
+    width: 100px;
+}
+
+.nav {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
 }
 
-nav a {
-    background-color: white;
-    padding: 8px 15px;
-    border: 1px solid #999;
+.nav a {
     text-decoration: none;
     color: black;
+    padding: 10px;
 }
 
 /* HERO */
 .hero {
-    border: 1px solid #999;
-    margin: 20px 0;
-    padding: 20px;
     text-align: center;
-    background-color: #eee;
 }
 
 .hero img {
     width: 100%;
 }
 
-.hero h1 {
-    margin: 10px 0;
-}
-
 .hero article {
-    border: 1px solid #999;
-    padding: 15px;
-    margin-top: 10px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .hero article img {
-    float: right;
-    margin-left: 10px;
+    width: 150px;
 }
 
 /* HISTORY */
 .history {
-    border: 1px solid #999;
     padding: 20px;
-    margin-bottom: 20px;
-    background-color: #eee;
+}
 
+.history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
     gap: 20px;
     align-items: center;
 }
 
-.history img {
-    width: 100%;
-}
-
-/* ADVENTURE */
-.adventure {
-    border: 1px solid #999;
+/* ADVENTURES */
+.adventures {
     padding: 20px;
-    background-color: #eee;
 }
 
-.gallery {
+.adventure-gallery {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
-.gallery figure {
+.adventure-gallery img {
+    width: 120px;
+}
+
+figure {
     text-align: center;
 }
 
-.gallery img {
-    width: 100px;
-}
-
 /* FOOTER */
-footer {
-    background-color: #c8b6e2;
-    padding: 15px;
-    margin-top: 20px;
-
+.footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    background-color: #b6a7d8;
+    padding: 10px;
 }
 
-.socialmedia {
+.social {
     display: flex;
     gap: 10px;
+}
+
+.social img {
+    width: 30px;
 }
