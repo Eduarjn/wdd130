@@ -297,3 +297,181 @@ footer p {
     flex: 0 0 45%;
   }
 }
+
+
+/* =========================================
+   CONTACT PAGE STYLES
+   ========================================= */
+
+.contact-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.contact-header address {
+  font-style: normal;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-header address a {
+  color: #1a1a2e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Container do Mapa e Formulário lado a lado */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  padding: 0 20px;
+  align-items: start;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: none;
+  background-color: #e0e0e0;
+}
+
+/* Estilos do Formulário */
+.form-container {
+  font-family: Arial, sans-serif;
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  margin-bottom: 15px;
+  align-items: start;
+}
+
+.form-item label {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.purpose-group {
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.purpose-group legend {
+  float: left;
+  width: 120px;
+  font-size: 14px;
+  color: #333;
+  padding-top: 5px;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-options label {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.checkbox-item {
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+
+.checkbox-item label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn {
+  margin-left: 120px;
+  width: calc(100% - 120px);
+  padding: 12px;
+  background-color: #e0e0e0;
+  border: 1px solid #999;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.submit-btn:hover {
+  background-color: #cccccc;
+}
+
+/* Seção da Equipe (Team) */
+.team-section {
+  background-color: #f5f4f0;
+  padding: 40px 20px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 30px;
+  color: #1a1a2e;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-grid figure {
+  text-align: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  width: 200px;
+}
+
+.team-grid img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px auto;
+}
+
+.team-grid figcaption {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
