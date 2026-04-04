@@ -300,25 +300,28 @@ footer p {
 
 
 /* =========================================
-   CONTACT PAGE STYLES
+   INTEGRATED CONTACT PAGE STYLES
+   (Combining wireframe layout with your custom style)
    ========================================= */
 
 .contact-header {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .contact-header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #1a1a2e;
+  font-size: 36px;
+  margin-bottom: 12px;
+  /* Usando a sua cor roxa escura para títulos */
+  color: #1a1a2e; 
 }
 
 .contact-header address {
   font-style: normal;
-  line-height: 1.6;
-  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  /* Usando a sua fonte secundária para informações detalhadas */
+  font-family: Arial, sans-serif; 
   color: #333;
 }
 
@@ -328,154 +331,195 @@ footer p {
   font-weight: bold;
 }
 
-/* Container do Mapa e Formulário lado a lado */
+.contact-header address a:hover {
+  text-decoration: underline;
+}
+
+/* --- Container do Mapa e Formulário lado a lado (Grid) --- */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto 50px auto;
-  padding: 0 20px;
+  max-width: 1100px; /* Um pouco mais largo para respiro */
+  margin: 0 auto 60px auto;
+  padding: 0 30px;
   align-items: start;
 }
 
 .map-container iframe {
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  min-height: 450px;
   border: none;
-  background-color: #e0e0e0;
+  /* Usando a sua cor de borda padrão */
+  border: 1px solid #cccccc; 
+  background-color: #f0f0f0;
 }
 
-/* Estilos do Formulário */
+/* --- Estilos do Formulário (Form) --- */
 .form-container {
-  font-family: Arial, sans-serif;
+  /* Usando a sua fonte secundária para o formulário */
+  font-family: Arial, sans-serif; 
 }
 
 .form-item {
   display: grid;
   grid-template-columns: 120px 1fr;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   align-items: start;
 }
 
 .form-item label {
   font-size: 14px;
+  font-weight: bold;
   color: #333;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .form-item input[type="text"],
 .form-item input[type="email"],
 .form-item textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #999;
-  border-radius: 4px;
+  padding: 12px;
+  /* Usando a sua cor de borda e estilo clássico */
+  border: 1px solid #999999; 
+  border-radius: 4px; /* Cantos levemente arredondados */
   font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+  outline: none;
+  /* Usando a sua cor roxa para destaque */
+  border-color: #4a3a8c; 
+  box-shadow: 0 0 5px rgba(74, 58, 140, 0.3);
 }
 
 .purpose-group {
   border: none;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .purpose-group legend {
   float: left;
   width: 120px;
   font-size: 14px;
+  font-weight: bold;
   color: #333;
   padding-top: 5px;
 }
 
 .radio-options {
-  display: grid;
-  grid-template-columns: 20px 1fr; 
-  gap: 10px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .radio-options label {
   margin-top: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  font-weight: normal;
   font-size: 14px;
+  cursor: pointer;
+}
+
+/* Ajustando o tamanho dos inputs de radio/checkbox */
+.radio-options input,
+.checkbox-item input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
 .checkbox-item {
   margin-left: 120px;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 20px 1fr; 
-  align-items: center;
+  margin-bottom: 25px;
 }
 
 .checkbox-item label {
   font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  cursor: pointer;
 }
 
+/* Estilizando o Botão para combinar com o seu Estilo de Menu */
 .submit-btn {
   margin-left: 120px;
-  width: calc(100% - 120px);
-  padding: 12px;
-  background-color: #e0e0e0;
-  border: 1px solid #999;
-  font-weight: bold;
-  font-size: 16px;
-  color: #333;
+  /* width: calc(100% - 120px); Ocupa o resto da largura */
+  padding: 12px 30px; /* Mais "paddado" como seus links */
+  
+  /* ESTILO 'MEU ESTILO' (COPIADO DO NAV A) */
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #1a1a2e;
+  background-color: white;
+  border: 1px solid #999999;
   cursor: pointer;
-  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* HOVER DO BOTÃO 'MEU ESTILO' (COPIADO DO NAV A:HOVER) */
 .submit-btn:hover {
-  background-color: #cccccc;
+  background-color: #4a3a8c;
+  color: white;
+  border-color: #4a3a8c;
 }
 
-/* Seção da Equipe (Team) */
+/* --- Seção da Equipe (Team) --- */
 .team-section {
-  background-color: #f5f4f0;
-  padding: 40px 20px;
+  /* Usando a sua cor de fundo clara padrão para seções de destaque */
+  background-color: #f5f4f0; 
+  padding: 50px 30px;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
 
 .team-section h2 {
   text-align: center;
-  font-size: 27px;
-  margin-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 40px;
+  /* Usando a sua fonte Georgia e cor roxa escura */
+  font-family: Georgia, serif; 
   color: #1a1a2e;
 }
 
 .team-grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  max-width: 900px;
+  gap: 50px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .team-grid figure {
   text-align: center;
-  background-color: #e0e0e0;
-  padding: 20px;
-  width: 200px;
+  flex: 1;
+  max-width: 250px;
+  padding: 10px;
 }
 
 .team-grid img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Mantendo o círculo do wireframe */
   object-fit: cover;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 20px auto;
+  /* Dando um pequeno destaque com borda no seu estilo */
+  border: 2px solid #cccccc; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .team-grid figcaption {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
+  /* Usando a sua fonte Arial e cor cinza para legendas */
+  font-family: Arial, sans-serif; 
+  font-size: 15px;
+  color: #444444;
+  font-weight: bold;
 }
