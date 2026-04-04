@@ -53,10 +53,15 @@
           <fieldset class="form-item purpose-group">
             <legend>Message Purpose</legend>
             <div class="radio-options">
-              <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
-              <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-              <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-            </div>
+          <input type="radio" id="general" name="purpose" value="general" checked>
+          <label for="general">General Inquiry</label>
+
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <label for="reservation">Reservation Question</label>
+
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          <label for="suggestion">Website Suggestion</label>
+          </div>
           </fieldset>
 
           <div class="form-item">
@@ -65,8 +70,9 @@
           </div>
 
           <div class="checkbox-item">
-            <label><input type="checkbox" name="newsletter" value="subscribe" checked> Please Subscribe me to the monthly newsletter</label>
-          </div>
+    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe" checked>
+    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+</div>
 
           <button type="submit" class="submit-btn">Get in Touch!</button>
         </form>
@@ -93,18 +99,18 @@
   </main>
 
   <footer>
-    <p>Footer Content including Social Media Icons/Links</p>
-    <div class="social-icons">
-      <a href="#" aria-label="Facebook">
+    <p>© 2026 White Water Rafting Company | Eduarjose Fajardo</p>
+    <nav class="socialmedia">
+    <a href="#" aria-label="Facebook">
         <img src="images/facebook.png" alt="Facebook">
-      </a>
-      <a href="#" aria-label="Twitter">
+    </a>
+    <a href="#" aria-label="Twitter">
         <img src="images/twitter.png" alt="Twitter">
-      </a>
-      <a href="#" aria-label="Instagram">
+    </a>
+    <a href="#" aria-label="Instagram">
         <img src="images/instagram.png" alt="Instagram">
-      </a>
-    </div>
+    </a>
+</nav>
   </footer>
 
 </body>
