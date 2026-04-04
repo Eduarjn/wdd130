@@ -209,13 +209,13 @@ footer p {
   color: #1a1a2e;
 }
 
-.social-icons {
+.socialmedia {
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
-.social-icons a {
+.socialmedia a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +227,7 @@ footer p {
   background-color: white;
 }
 
-.social-icons img {
+.socialmedia img {
   width: 22px;
   height: 22px;
   object-fit: contain;
