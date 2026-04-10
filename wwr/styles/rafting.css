@@ -472,9 +472,9 @@ footer p {
   border-color: #4a3a8c;
 }
 
-/* --- Seção da Equipe (Team) --- */
+
 .team-section {
-  /* Usando a sua cor de fundo clara padrão para seções de destaque */
+
   background-color: #f5f4f0; 
   padding: 50px 30px;
   border-top: 1px solid #dddddd;
@@ -485,7 +485,7 @@ footer p {
   text-align: center;
   font-size: 30px;
   margin-bottom: 40px;
-  /* Usando a sua fonte Georgia e cor roxa escura */
+ 
   font-family: Georgia, serif; 
   color: #1a1a2e;
 }
@@ -508,18 +508,165 @@ footer p {
 .team-grid img {
   width: 120px;
   height: 120px;
-  border-radius: 50%; /* Mantendo o círculo do wireframe */
+  
+  border-radius: 50%; 
+  
   object-fit: cover;
+  
   margin: 0 auto 20px auto;
-  /* Dando um pequeno destaque com borda no seu estilo */
+  
   border: 2px solid #cccccc; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .team-grid figcaption {
-  /* Usando a sua fonte Arial e cor cinza para legendas */
+  
   font-family: Arial, sans-serif; 
   font-size: 15px;
   color: #444444;
   font-weight: bold;
+}
+
+
+/* =========================================
+   ESTILOS DA PÁGINA HOME (W06)
+   ========================================= */
+.home-hero {
+  position: relative; /* Exigência do professor para o Hero */
+}
+
+.home-hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-hero h1 {
+  position: absolute; /* Exigência do W06 */
+  top: 30%;
+  left: 10%;
+  background-color: rgba(26, 26, 46, 0.8); /* a tua cor #1a1a2e mas com transparência */
+  color: white;
+  padding: 20px;
+  font-size: 32px;
+}
+
+.newsletter-section {
+  background-color: #ede9ff; /* a mesma cor da tua section history */
+  padding: 40px 30px;
+  border-bottom: 1px solid #dddddd;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 8px;
+}
+
+.newsletter-section h2 {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1a1a2e;
+  background-color: white;
+  border: 1px solid #999999;
+  padding: 15px 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #4a3a8c;
+  color: white;
+  border-color: #4a3a8c;
+}
+
+/* CSS Grid da Home */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  gap: 30px;
+  padding: 40px;
+  background-color: #f5f4f0; /* a mesma cor da tua section adventures */
+}
+
+.home-grid figure {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  text-align: center;
+}
+
+.home-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* =========================================
+   ESTILOS DA PÁGINA TRIPS (W06)
+   ========================================= */
+.trips-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Três pacotes, três colunas */
+  gap: 25px;
+  padding: 0 40px 50px 40px;
+}
+
+.trip-card {
+  background-color: #f5f4f0;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Tabela de Preços */
+.trips-table {
+  width: 80%;
+  margin: 0 auto 60px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.trips-table th, .trips-table td {
+  border: 1px solid #999999;
+  padding: 15px;
+  text-align: center;
+}
+
+.trips-table th {
+  background-color: #c8bef7; 
+  color: #1a1a2e;
+  font-weight: bold;
+}
+
+
+@media (max-width: 700px) {
+  .home-grid, .trips-grid {
+    grid-template-columns: 1fr; 
+  }
 }
