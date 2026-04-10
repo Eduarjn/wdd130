@@ -1,538 +1,6 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-    font-family: Georgia, serif;
-    font-size: 16px;
-    color: #222222;
-    background-color: white;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  background-color: #c8bef7;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  gap: 24px;
-}
-
-header img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav a {
-  display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-  color: #1a1a2e;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #999999;
-  background-color: white;
-}
-
-nav a + a {
-  border-left: none;
-}
-
-nav a:hover, nav a.active {
-  background-color: #4a3a8c;
-  color: white;
-  border-color: #4a3a8c;
-}
-
-.hero {
-  padding-top: 36px;
-  padding-bottom: 36px;
-  padding-left: 48px;
-  padding-right: 48px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #dddddd;
-}
-
-.hero h1 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 24px;
-  color: #1a1a2e;
-}
-
-.hero-content {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #cccccc;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.hero-content p {
-  flex: 1;
-  line-height: 1.75;
-  font-size: 15px;
-}
-
-.hero-content img {
-  width: 150px;
-  height: 120px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.history {
-  background-color: #ede9ff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 48px;
-  padding-right: 48px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #dddddd;
-}
-
-.history h2 {
-  font-size: 27px;
-  text-align: center;
-  margin-bottom: 28px;
-  color: #1a1a2e;
-}
-
-.history-content {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 28px;
-  align-items: center;
-}
-
-.history-content p {
-  line-height: 1.75;
-  font-size: 15px;
-  color: #333333;
-  text-align: justify;
-}
-
-.history-content img {
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.adventures {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 48px;
-  padding-right: 48px;
-  background-color: #f5f4f0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #dddddd;
-}
-
-.adventures h2 {
-  font-size: 27px;
-  text-align: center;
-  margin-bottom: 28px;
-  color: #1a1a2e;
-}
-
-.adventures-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-}
-
-.adventures-grid figure {
-  flex: 1;
-  text-align: center;
-}
-
-.adventures-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  margin-bottom: 8px;
-}
-
-.adventures-grid figcaption {
-  font-size: 13px;
-  color: #444444;
-  font-family: Arial, sans-serif;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #c8bef7;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-footer p {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #1a1a2e;
-}
-
-.socialmedia {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.socialmedia a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #1a1a2e;
-  background-color: white;
-}
-
-.socialmedia img {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-}
-
-@media (max-width: 700px) {
-  header {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
-  nav {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  nav a + a {
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: #999999;
-  }
-  
-  .hero {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .hero-content {
-    flex-direction: column;
-  }
-  
-  .hero-content img {
-    width: 100%;
-    height: 180px;
-  }
-  
-  .history {
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .history-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .history-content img {
-    width: 100%;
-    height: 200px;
-  }
-  
-  .adventures {
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .adventures-grid {
-    flex-wrap: wrap;
-  }
-  
-  .adventures-grid figure {
-    flex: 0 0 45%;
-  }
-}
-
-
-/* =========================================
-   INTEGRATED CONTACT PAGE STYLES
-   (Combining wireframe layout with your custom style)
-   ========================================= */
-
-.contact-header {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-
-.contact-header h1 {
-  font-size: 36px;
-  margin-bottom: 12px;
-  /* Usando a sua cor roxa escura para títulos */
-  color: #1a1a2e; 
-}
-
-.contact-header address {
-  font-style: normal;
-  line-height: 1.8;
-  /* Usando a sua fonte secundária para informações detalhadas */
-  font-family: Arial, sans-serif; 
-  color: #333;
-}
-
-.contact-header address a {
-  color: #1a1a2e;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-header address a:hover {
-  text-decoration: underline;
-}
-
-/* --- Container do Mapa e Formulário lado a lado (Grid) --- */
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 1100px; /* Um pouco mais largo para respiro */
-  margin: 0 auto 60px auto;
-  padding: 0 30px;
-  align-items: start;
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 450px;
-  border: none;
-  /* Usando a sua cor de borda padrão */
-  border: 1px solid #cccccc; 
-  background-color: #f0f0f0;
-}
-
-/* --- Estilos do Formulário (Form) --- */
-.form-container {
-  /* Usando a sua fonte secundária para o formulário */
-  font-family: Arial, sans-serif; 
-}
-
-.form-item {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  margin-bottom: 18px;
-  align-items: start;
-}
-
-.form-item label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
-  margin-top: 10px;
-}
-
-.form-item input[type="text"],
-.form-item input[type="email"],
-.form-item textarea {
-  width: 100%;
-  padding: 12px;
-  /* Usando a sua cor de borda e estilo clássico */
-  border: 1px solid #999999; 
-  border-radius: 4px; /* Cantos levemente arredondados */
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-}
-
-.form-item input:focus,
-.form-item textarea:focus {
-  outline: none;
-  /* Usando a sua cor roxa para destaque */
-  border-color: #4a3a8c; 
-  box-shadow: 0 0 5px rgba(74, 58, 140, 0.3);
-}
-
-.purpose-group {
-  border: none;
-  padding: 0;
-  margin-bottom: 18px;
-}
-
-.purpose-group legend {
-  float: left;
-  width: 120px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
-  padding-top: 5px;
-}
-
-.radio-options {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.radio-options label {
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: normal;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-/* Ajustando o tamanho dos inputs de radio/checkbox */
-.radio-options input,
-.checkbox-item input {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-}
-
-.checkbox-item {
-  margin-left: 120px;
-  margin-bottom: 25px;
-}
-
-.checkbox-item label {
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
-
-/* Estilizando o Botão para combinar com o seu Estilo de Menu */
-.submit-btn {
-  margin-left: 120px;
-  /* width: calc(100% - 120px); Ocupa o resto da largura */
-  padding: 12px 30px; /* Mais "paddado" como seus links */
-  
-  /* ESTILO 'MEU ESTILO' (COPIADO DO NAV A) */
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-  color: #1a1a2e;
-  background-color: white;
-  border: 1px solid #999999;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* HOVER DO BOTÃO 'MEU ESTILO' (COPIADO DO NAV A:HOVER) */
-.submit-btn:hover {
-  background-color: #4a3a8c;
-  color: white;
-  border-color: #4a3a8c;
-}
-
-
-.team-section {
-
-  background-color: #f5f4f0; 
-  padding: 50px 30px;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-}
-
-.team-section h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 40px;
- 
-  font-family: Georgia, serif; 
-  color: #1a1a2e;
-}
-
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.team-grid figure {
-  text-align: center;
-  flex: 1;
-  max-width: 250px;
-  padding: 10px;
-}
-
-.team-grid img {
-  width: 120px;
-  height: 120px;
-  
-  border-radius: 50%; 
-  
-  object-fit: cover;
-  
-  margin: 0 auto 20px auto;
-  
-  border: 2px solid #cccccc; 
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.team-grid figcaption {
-  
-  font-family: Arial, sans-serif; 
-  font-size: 15px;
-  color: #444444;
-  font-weight: bold;
-}
-
-
-/* =========================================
-   ESTILOS DA PÁGINA HOME (W06)
-   ========================================= */
+/* estilos novos da home */
 .home-hero {
-  position: relative; /* Exigência do professor para o Hero */
+  position: relative; /* deixar a imagem atras do titulo */
 }
 
 .home-hero img {
@@ -543,17 +11,18 @@ footer p {
 }
 
 .home-hero h1 {
-  position: absolute; /* Exigência do W06 */
+  position: absolute; 
   top: 30%;
   left: 10%;
-  background-color: rgba(26, 26, 46, 0.8); /* a tua cor #1a1a2e mas com transparência */
+  /* background-color: black; testei e ficou muito escuro, usei rgba melhor */
+  background-color: rgba(26, 26, 46, 0.8);
   color: white;
   padding: 20px;
   font-size: 32px;
 }
 
 .newsletter-section {
-  background-color: #ede9ff; /* a mesma cor da tua section history */
+  background-color: #ede9ff; 
   padding: 40px 30px;
   border-bottom: 1px solid #dddddd;
   max-width: 800px;
@@ -592,13 +61,13 @@ footer p {
   border-color: #4a3a8c;
 }
 
-/* CSS Grid da Home */
+/* imagens de baixo da home */
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 40px;
-  background-color: #f5f4f0; /* a mesma cor da tua section adventures */
+  background-color: #f5f4f0; 
 }
 
 .home-grid figure {
@@ -615,9 +84,7 @@ footer p {
   margin-bottom: 15px;
 }
 
-/* =========================================
-   ESTILOS DA PÁGINA TRIPS (W06)
-   ========================================= */
+/* pagina trips */
 .trips-header {
   text-align: center;
   padding: 40px 20px;
@@ -625,7 +92,7 @@ footer p {
 
 .trips-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Três pacotes, três colunas */
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colunas pros pacotes */
   gap: 25px;
   padding: 0 40px 50px 40px;
 }
@@ -644,7 +111,7 @@ footer p {
   margin-bottom: 15px;
 }
 
-/* Tabela de Preços */
+/* estilo da tabela */
 .trips-table {
   width: 80%;
   margin: 0 auto 60px auto;
@@ -664,9 +131,8 @@ footer p {
   font-weight: bold;
 }
 
-
 @media (max-width: 700px) {
   .home-grid, .trips-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
