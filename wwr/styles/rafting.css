@@ -206,6 +206,10 @@ header nav a {
   color: #1a1a2e; 
 }
 
+header img {
+  width: 150px; /* teste de tamanho */
+  height: auto;
+
 /*teste*/
 footer {
   display: flex;
