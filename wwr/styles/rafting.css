@@ -209,7 +209,7 @@ header nav a {
 header img {
   width: 150px; /* teste de tamanho */
   height: auto;
-
+}
 /*teste*/
 footer {
   display: flex;
@@ -224,6 +224,24 @@ footer {
 footer .socialmedia img {
   width: 30px; 
 }
+
+
+.socialmedia {
+  display: flex;
+  gap: 15px; 
+}
+
+
+.socialmedia img {
+  width: 35px; 
+  height: auto;
+  transition: transform 0.2s; 
+}
+
+
+.socialmedia img:hover {
+  transform: scale(1.1); 
+}  
 
 .history-content {
   display: grid;
