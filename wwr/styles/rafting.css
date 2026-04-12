@@ -1,6 +1,10 @@
-/* estilos novos da home */
-.home-hero {
-  position: relative; /* deixar a imagem atras do titulo */
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 }
 
 .home-hero img {
