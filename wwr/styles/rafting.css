@@ -1,0 +1,21 @@
+/* rafting.css - World's Wildest Rivers (wwr) project
+   Estilos para o site de rafting. Preencha com suas regras de layout,
+   cores, tipografia e responsividade. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
