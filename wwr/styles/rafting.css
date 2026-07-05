@@ -1,13 +1,11 @@
-
 :root {
-    --primary-color: #0d5c63;      
-    --secondary-color: #f28c28;    
-    --accent1-color: #2c3e50;      
-    --accent2-color: #ffffff;     
+    --primary-color: #0d5c63;
+    --secondary-color: #f28c28;
+    --accent1-color: #2c3e50;
+    --accent2-color: #ffffff;
     --heading-font: "Trebuchet MS", Helvetica, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-
 
 * {
     margin: 0;
@@ -15,25 +13,21 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
-
 
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-
 header {
     padding: 16px;
     text-align: center;
 }
 
-/* NAV links */
 nav {
     display: flex;
     justify-content: space-around;
@@ -46,28 +40,23 @@ nav a {
     padding: 12px;
 }
 
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-
 .socialmedia a {
     text-decoration: none;
 }
 
-
 .hero {
     position: relative;
 }
-
 
 .hero img {
     display: block;
@@ -75,7 +64,6 @@ nav, p, section, article {
     height: auto;
 }
 
-/* H1 sobre la imagen del hero */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -86,7 +74,6 @@ nav, p, section, article {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
-
 
 .hero article {
     position: absolute;
@@ -99,14 +86,12 @@ nav, p, section, article {
     opacity: 0.9;
 }
 
-
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 16px;
     border-radius: 6px;
 }
-
 
 footer {
     text-align: center;
