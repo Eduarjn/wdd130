@@ -1,21 +1,127 @@
-/* rafting.css - World's Wildest Rivers (wwr) project
-   Estilos para o site de rafting. Preencha com suas regras de layout,
-   cores, tipografia e responsividade. */
+
+:root {
+    --primary-color: #0d5c63;      
+    --secondary-color: #f28c28;    
+    --accent1-color: #2c3e50;      
+    --accent2-color: #ffffff;     
+    --heading-font: "Trebuchet MS", Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
-header,
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+header {
+    padding: 16px;
+    text-align: center;
+}
+
+/* NAV links */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 12px;
+}
+
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+
+.hero {
+    position: relative;
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* H1 sobre la imagen del hero */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+
+.hero article {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    right: 50px;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    opacity: 0.9;
+}
+
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border-radius: 6px;
+}
+
+
 footer {
-    padding: 1rem;
+    text-align: center;
+    padding: 16px;
+    margin-top: 20px;
 }
 
-main {
-    padding: 1rem;
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: transparent;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
 }
