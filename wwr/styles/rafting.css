@@ -23,11 +23,15 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* REQUIREMENT 2: Header Grid */
 header {
     padding: 16px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
 }
 
+/* REQUIREMENT 3: Nav Flexbox */
 nav {
     display: flex;
     justify-content: space-around;
@@ -45,13 +49,9 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -93,16 +93,47 @@ nav, p, section, article {
     border-radius: 6px;
 }
 
-footer {
+/* ADVENTURES SECTION (5 imagens) */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventures figure {
+    margin: 0;
     text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* REQUIREMENT 5: Footer Flexbox (Texto esq, ícones dir) */
+footer {
     padding: 16px;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .socialmedia {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 16px;
+    margin: 0;
+    padding: 0;
     background-color: transparent;
 }
 
