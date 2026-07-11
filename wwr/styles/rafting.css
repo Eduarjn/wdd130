@@ -23,7 +23,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* REQUIREMENT 2: Header Grid */
+/* REQUIREMENT 2: Header Grid (Logo na esquerda, Menu na direita) */
 header {
     padding: 16px;
     display: grid;
@@ -31,22 +31,32 @@ header {
     align-items: center;
 }
 
-/* REQUIREMENT 3: Nav Flexbox */
+/* REQUIREMENT 3: Nav Flexbox (Encostado na direita) */
 nav {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--primary-color);
+    justify-content: flex-end;
+    gap: 30px;
 }
 
 nav a {
-    color: var(--accent2-color);
+    color: var(--primary-color);
+    font-weight: bold;
     text-decoration: none;
     padding: 12px;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 p, section, article {
@@ -93,22 +103,38 @@ p, section, article {
     border-radius: 6px;
 }
 
-/* ADVENTURES SECTION (5 imagens) */
+/* HISTORY SECTION (Texto - Imagem - Texto) */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+/* ADVENTURES SECTION (5 imagens lado a lado) */
 .adventures {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .adventures figure {
     margin: 0;
     text-align: center;
+    flex: 1; /* Faz as 5 colunas terem o mesmo tamanho */
 }
 
 .adventures img {
     width: 100%;
-    max-width: 140px;
     height: auto;
     border-radius: 8px;
 }
@@ -126,6 +152,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 2px solid var(--primary-color); /* Linha do wireframe */
 }
 
 .socialmedia {
@@ -134,7 +161,6 @@ footer {
     gap: 16px;
     margin: 0;
     padding: 0;
-    background-color: transparent;
 }
 
 .socialmedia img {
